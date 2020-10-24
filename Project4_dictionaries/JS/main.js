@@ -7,6 +7,6 @@ function my_Dictionary() {
         Engine:"EJ255",
         Transmission:"Manual",
     };
-    delete Car.Brand; //This deletes transmission
+    delete Car.Year; //This deletes transmission
     document.getElementById("Dictionary").innerHTML= Car.Brand +Car.Transmission +Car.Modle +Car.Year;
 }
