@@ -1,0 +1,58 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <script src="./JS/main.js"></script>
+            <link rel="stylesheet" type="text/css" href="./main.css">
+        </head>
+        <body>
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="rwb911.jpg" style="width:100%">
+                  <div class="text">Porche 911 RWB widebody</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="rx7.jpg" style="width:100%">
+                  <div class="text">Mazda rx-7 widebody</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="supra.jpg" style="width:100%">
+                  <div class="text">Toyota Supra</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="sti.jpg" style="width:100%">
+                    <div class="text">Subaru STI widebody</div>
+                  </div>
+                                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+
+
+            <br>
+            <p>How many seconds would you like to set youre alarm for?</p>
+            <input id="seconds" value="" />
+            <button onclick="countdown()">Click here!</button>
+            <p id="timer"></p>
+            
+
+        </body>
+    </html>

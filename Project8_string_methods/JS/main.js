@@ -34,13 +34,12 @@ function slice_Method() {
       var X = 12938.3012987376112;
       document.getElementById("Precision").innerHTML = X.toPrecision(10);
   }
-//toFixed method
+//toFixed method and valueOf()
 function decimal_Function() {
     var num = 4009.624332169775;
     var n = num.toFixed(3);
     document.getElementById("Decimal").innerHTML = n;
   }
-
   function value_Function() {
     var num = 299;
     var n = num.valueOf()
