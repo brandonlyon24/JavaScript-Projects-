@@ -49,25 +49,39 @@ function constant_Function() {
 //    return a * b;
 //}
 //console.log(C);
+
 //Let function
-//var X = 100; 
+//var X = 100;         
 //document.write(X);
 //{
  //   let X = 50;
  //   document.write(X);
 //}
 //document.write(X);
- //Objects
+
+//Objects
  let car = {
-     make: "Dodge",
-     modle: "Viper",
-     year: "2021",
-     color: "red",
+     make: "Dodge ",
+     modle: "Viper ",
+     year: "2021 ",
+     color: "red ",
      description : function () {
          return "The car is a " + this.year + this.color + this.make + this.modle;
      }
     };
  document.getElementById("Car_Object").innerHTML = car.description();
 
+//Continue and break statements 
+var text = "";
+var i;
+for (i = 0; i < 12; i++) {
+    if (i == 5) { break; }
+    text += "Number." + i + "<br>";
+}
+document.getElementById("Break_statement").innerHTML = text;
 
-
+for (i = 0; i < 8; i++) {
+    if (i ==3) { continue; }
+    text += "Number." + i + "<br>";
+}
+document.getElementById("Continue_statement").innerHTML = text;
