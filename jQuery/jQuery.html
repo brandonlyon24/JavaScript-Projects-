@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+    </body>
+
+
+
+        <script>
+            $(document).ready(function() { //$ stands for jQuery, inside the append() is all html code and displays on the screen
+                $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jquery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+                );
+                $("#2").css({"color":"red"}); //this makes the second P red
+                $("#3").click(function() {    //this hides h1 when you click p3
+                    $('h1').hide();
+                });
+            });
+
+
+        </script>
+
+
+
+    
+</html>
